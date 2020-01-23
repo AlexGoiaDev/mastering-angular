@@ -1,0 +1,7 @@
+<p>forms works!</p>
+<form [formGroup]="myForm" (submit)="onSubmit()">
+  <label>
+    <input formControlName="name" type="text" placeholder="Your name">
+  </label>
+  <button [disabled]="!myForm.valid">Enviar</button>
+</form>

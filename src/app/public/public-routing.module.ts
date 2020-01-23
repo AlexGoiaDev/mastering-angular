@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./landing/landing.module').then(m => m.LandingModule)
+  },
+  {
+    path: 'forms',
+    loadChildren: () => import('./forms/forms.module').then(m => m.FormsModule)
   }
 
 ];
